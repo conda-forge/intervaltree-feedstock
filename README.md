@@ -14,14 +14,15 @@ Summary: Editable interval tree data structure for Python 2 and 3
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/intervaltree-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/intervaltree-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/intervaltree-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/intervaltree-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/intervaltree-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/intervaltree-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/intervaltree-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/intervaltree-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/intervaltree/badges/version.svg)](https://anaconda.org/conda-forge/intervaltree)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/intervaltree/badges/downloads.svg)](https://anaconda.org/conda-forge/intervaltree)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-intervaltree-green.svg)](https://anaconda.org/conda-forge/intervaltree) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/intervaltree.svg)](https://anaconda.org/conda-forge/intervaltree) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/intervaltree.svg)](https://anaconda.org/conda-forge/intervaltree) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/intervaltree.svg)](https://anaconda.org/conda-forge/intervaltree) |
 
 Installing intervaltree
 =======================
