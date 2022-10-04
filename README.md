@@ -5,7 +5,7 @@ Home: https://github.com/chaimleib/intervaltree
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Editable interval tree data structure for Python 2 and 3
 
@@ -116,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bgruening](https://github.com/bgruening/)
 * [@johanneskoester](https://github.com/johanneskoester/)
 
