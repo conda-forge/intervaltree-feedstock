@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: intervaltree
@@ -6,12 +6,12 @@ package:
 
 source:
   fn: intervaltree-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/i/intervaltree/intervaltree-{{ version }}.tar.gz
-  sha256: 902b1b88936918f9b2a19e0e5eb7ccb430ae45cde4f39ea4b36932920d33952d
+  url: https://pypi.org/packages/source/i/intervaltree/intervaltree-{{ version }}.tar.gz
+  sha256: f1e83911d63206f145a039a5b03f2e86297814b1e8b5cfba3af6a09f1b9a73d2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
