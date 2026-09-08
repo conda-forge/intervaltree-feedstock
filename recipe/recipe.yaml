@@ -1,0 +1,45 @@
+schema_version: 1
+
+context:
+  version: "3.1.0"
+
+package:
+  name: intervaltree
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/i/intervaltree/intervaltree-${{ version }}.tar.gz
+  sha256: 902b1b88936918f9b2a19e0e5eb7ccb430ae45cde4f39ea4b36932920d33952d
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+  run:
+    - python >=${{ python_min }}
+    - sortedcontainers
+
+tests:
+  - python:
+      imports:
+        - intervaltree
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  summary: Editable interval tree data structure for Python 2 and 3
+  homepage: https://github.com/chaimleib/intervaltree
+
+extra:
+  recipe-maintainers:
+    - johanneskoester
+    - bgruening
