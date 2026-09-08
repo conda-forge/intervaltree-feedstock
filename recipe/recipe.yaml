@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.1.0"
+  version: "3.2.1"
 
 package:
   name: intervaltree
@@ -9,17 +9,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/intervaltree/intervaltree-${{ version }}.tar.gz
-  sha256: 902b1b88936918f9b2a19e0e5eb7ccb430ae45cde4f39ea4b36932920d33952d
+  sha256: f3f7e8baeb7dd75b9f7a6d33cf3ec10025984a8e66e3016d537e52130c73cfe2
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools
+    - hatchling
+    - uv-dynamic-versioning
     - pip
   run:
     - python >=${{ python_min }}
